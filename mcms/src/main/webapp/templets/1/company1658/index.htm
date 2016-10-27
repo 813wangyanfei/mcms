@@ -1,0 +1,139 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+{ms:include filename=headFile.htm/}
+</head>
+<body>
+{ms:include filename=head.htm/}
+<div id="ban001" class="carousel slide" data-ride="carousel" data-wrap="true" data-interval="3000">
+	<ol class="carousel-indicators">
+		<li class="active" data-target="#ban001" data-slide-to="0"></li>
+		<li class="" data-target="#ban001" data-slide-to="1"></li>
+		<li class="" data-target="#ban001" data-slide-to="2"></li>
+	</ol>
+	<div class="carousel-inner"> 
+		{ms:arclist typeid=147 size=1}
+			<div class="item active"> <a href="#" ><img src="[field.litpic/]" alt="" class="ttX mwn h500" /></a> </div>
+		{/ms:arclist}
+		{ms:arclist typeid=147 size=2}
+			<div class="item"> <a href="#" ><img src="[field.litpic/]" alt="" class="ttX mwn h500" /></a> </div>
+		{/ms:arclist} 
+	</div>
+</div>
+<div class="new003 container">
+	<div class="h3box text-center">
+		<h3 class="h3bdbg"> 公司新闻<br/>
+			<span>NEWS</span> 
+		</h3>
+	</div>
+	<div class="clearfix new003con">
+		<ul class="row">
+			{ms:arclist typeid=68 size=4}
+				<li class="col-sm-6 col-sm-6 col-xs-6">
+					<dl class="clearfix bgs">
+						<dt> 
+							<a href="[field.link/]" title="[field.title/]"> 
+								<img src="[field.litpic/]" alt="[field.title/]" class="img-responsive"> 
+							</a> 
+						</dt>
+						<dd>
+							<div class="txt">
+								<div class="title"><a href="[field.link/]" title="[field.title/]">[field.title/]</a></div>
+								<div class="des">[field.descrip/]</div>
+								<a href="[field.link/]" title="[field.title/]" class="more">+查看详情</a> 
+							</div>
+						</dd>
+					</dl>
+				</li>
+			{/ms:arclist}
+		</ul>
+		<div class="footmore"><a href="{ms:global.url/}/59/68/index.html">+MORE</a></div>
+	</div>
+</div>
+<div class="about002">
+	<div class="container">
+		<div class="h3box text-center">
+			<h3 class="h3bdbg h3bdbg2"> 公司简介<br/>
+				<span>ABOUT</span> 
+			</h3>
+		</div>
+		<div class="box met_editor"> 
+			{ms:arclist typeid=95 size=1}
+				[field.content/]
+			{/ms:arclist} 
+		</div>
+		<div class="footmore"><a href="{ms:global.url/}/93/95/index.html">+MORE</a></div>
+	</div>
+</div>
+<div>
+	<div class="pro002 container">
+		<div class="h3box text-center">
+			<h3 class="h3bdbg"> 录像机<br/>
+				<span>PRODUCT</span> 
+			</h3>
+		</div>
+		<ul class="pro002box clearfix">
+			{ms:arclist typeid=107 size=5}
+				<li class="col-md-3 col-sm-3 col-xs-6"> 
+					<a href="[field.link/]" title="[field.title/]" class="clearfix"> 
+						<img src="[field.litpic/]" class="img-responsive center-block" style="width:218px;height:168px;" /> 
+						<span class="title">[field.title/]</span> 
+					</a> 
+				</li>
+			{/ms:arclist}
+		</ul>
+		<div class="footmore"><a href="{ms:global.url/}/106/107/index.html	">+MORE</a></div>
+	</div>
+</div>
+<div style="background:#eee;">
+	<div class="pro002 container">
+		<div class="h3box text-center">
+			<h3 class="h3bdbg h3bdbg2"> 摄像头<br/>
+				<span>PRODUCT</span> 
+			</h3>
+		</div>
+		<ul class="pro002box clearfix">
+			{ms:arclist typeid=65 size=5}
+				<li class="col-md-3 col-sm-3 col-xs-6"> 
+					<a href="[field.link/]" title="[field.title/]" class="clearfix"> 
+						<img src="[field.litpic/]" class="img-responsive center-block" style="width:218px;height:168px;" /> 
+						<span class="title">[field.title/]</span> 
+					</a> 
+				</li>
+			{/ms:arclist}
+		</ul>
+		<div class="footmore"><a href="{ms:global.url/}/61/65/index.html">+MORE</a></div>
+	</div>
+</div>
+<div>
+	<div class="pro002 container">
+		<div class="h3box text-center">
+			<h3 class="h3bdbg"> 监控电源<br/>
+				<span>PRODUCT</span> 
+			</h3>
+		</div>
+		<ul class="pro002box clearfix">
+			{ms:arclist typeid=83 size=5}
+				<li class="col-md-3 col-sm-3 col-xs-6"> 
+					<a href="[field.link/]" title="[field.title/]" class="clearfix"> 
+						<img src="[field.litpic/]" class="img-responsive center-block" /> 
+						<span class="title">[field.title/]</span> 
+					</a> 
+				</li>
+			{/ms:arclist}
+		</ul>
+		<div class="footmore"><a href="	{ms:global.url/}/62/83/index.html">+MORE</a></div>
+	</div>
+</div>
+<section class="link001">
+	<div class="container">
+		<div class="h3box text-center" style="margin-bottom:20px;">
+			<h3 class="h3bdbg h3bdbg2"> 友情链接<br/>
+				<span>LINK</span> 
+			</h3>
+		</div>
+	</div>
+</section>
+{ms:include filename=footer.htm/}
+</body>
+</html>

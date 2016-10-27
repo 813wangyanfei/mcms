@@ -1,0 +1,82 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+{ms:include filename=headFile.htm/}
+</head>
+<body>
+{ms:include filename=head.htm/}
+<div id="ban001" class="carousel slide" data-ride="carousel" data-wrap="true" data-interval="3000">
+	<ol class="carousel-indicators">
+	</ol>
+	<div class="carousel-inner">
+		<div class="item active"> 
+			{ms:arclist typeid=147 size=1} 
+				<a href="http://ms.mingsoft.net/" title=""> <img src="[field.litpic/]"  class="ttX mwn h500" /> </a> 
+			{/ms:arclist} 
+		</div>
+	</div>
+</div>
+<section class="met_section   container">
+	<aside>
+		<section class="met_aside">
+			<h2>产品中心<span class="sidebaran glyphicon glyphicon-th-list"></span></h2>
+			<div class="met_aside_list"> 
+				{ms:channel typeid=106}
+					<dl class="list-none navnow">
+						<dt id='part2_15' >
+							<a href='[field.typelink/]'  class="zm"><span>[field.typetitle/]</span></a>
+						</dt>
+					</dl>
+				{/ms:channel}
+				<div class="met_clear"></div>
+			</div>
+		</section>
+	</aside>
+	<article>
+		<div class="met_article">
+			<section class="met_article_head sidebarh1ok">
+				<h1 class="clearfix">{ms:field.typetitle/}</h1>
+				<div class="met_position"> 
+					<a href="{ms:global.host/}" title="网站首页">网站首页</a> &gt; 
+					<a href="#" >{ms:field.typetitle/}</a> 
+				</div>
+			</section>
+			<div class="met_clear"></div>
+			<div class="clearfix">
+				<ul id="cd-gallery-items" class="cd-container">
+					{ms:arclist ispaging=true size=8}
+						<li>
+							<ul class="cd-item-wrapper">
+								<li class="cd-item-front"> 
+									<a href="[field.link/]">
+										<img src="[field.litpic/]" alt="Preview image" style="width:203px;height:135px;">
+									</a> 
+								</li>
+							</ul>
+							<div class="cd-item-info"> <b><a href="[field.link/]">[field.title/]</a></b> </div>
+							<nav>
+								<ul class="cd-item-navigation">
+									<li><a class="cd-img-replace" href="#0">Prev</a></li>
+									<li><a class="cd-img-replace" href="#0">Next</a></li>
+								</ul>
+							</nav>
+							<a class="cd-3d-trigger cd-img-replace" href="[field.link/]">Open</a> 
+						</li>
+					{/ms:arclist}
+				</ul>
+				<div class="met_clear"></div>
+				<div class='met_pager'> 
+					<span class='PreSpan'><a href="{ms:page.pre/}">上一页</a></span> 
+					<span class='NextSpan'><a href="{ms:page.next/}" class='NextA'>下一页</a></span> 
+					<span class='PageText'>转至第</span>
+					<input type='text' id='metPageT' data-pageurl='product_3_|.html|2' value='1' />
+					<input type='button' id='metPageB' value='页' />
+				</div>
+			</div>
+		</div>
+	</article>
+	<div class="met_clear"></div>
+</section>
+{ms:include filename=footer.htm/}
+</body>
+</html>

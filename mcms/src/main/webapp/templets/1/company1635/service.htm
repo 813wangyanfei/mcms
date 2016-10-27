@@ -1,0 +1,257 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>{ms:field.typetitle/}</title>
+{ms:include filename=headFile.htm/}
+</head>
+<body>
+<div  class="section section1">
+{ms:include filename=head.htm/} 
+<script>
+    $(document).ready(function() {
+        $(".closeIco").click(function(i){
+            $("#window01").fadeOut();
+            $(".liSty01").fadeOut(500);
+        })
+
+        $(".lookIco_box").click(function(){
+            //获取当前的catid
+            var id = $(this).find("input").val();
+            if(id)
+            {
+                $.getJSON("/?m=content&c=index&a=public_mobile_getjson&id="+id, function(data){
+                    if(data.type == 'ok'){
+                        var content = data.content;
+                        $("#ndfw_div").empty();
+                        $("#ndfw_div").html(content);
+                    }
+                });
+            }
+            $("#window01").fadeIn();
+            $(".liSty01").fadeIn(500);
+        });
+    });
+
+</script>
+<div id="ndfw36"></div>
+{ms:arclist typeid=63 size=1 order=dese}
+<div id="yearGood">
+	<div id="window01"></div>
+	<div class="liSty01">
+		<div class="fl cf" id="ndfw_div">[field.content/] </div>
+		<a href="javascript:void(0)" class="closeIco fr"><img src="{ms:globalskin.url/}/images/closeico.jpg" /></a> </div>
+	<div class="w1066 clearfix">
+		<div class="leftCont cf fl">
+			<p class="titl03">[field.title/]</p>
+			<div class="txt01">
+				<p class="t1 f14">年度设计服务体系</p>
+				<p class="cc">[field.descrip/]</p>
+			</div>
+			<a href="javascript:void(0)" class="lookIco lookIco_box"><img src="{ms:globalskin.url/}/images/lookico01.png" /></a> 		 		</div>
+		<div class="rightUl fr">
+			<ul class="showUl">
+				<!---年度优势---->
+				<li class="liS1 lookIco_box">好处<img src="{ms:globalskin.url/}/images/plusico.png" />
+					<input type="hidden" name="catid" value="82"/>
+				</li>
+				<li class="liS2 lookIco_box">适用群体<img src="{ms:globalskin.url/}/images/plusico.png" />
+					<input type="hidden" name="catid" value="83"/>
+				</li>
+				<li class="liS3 lookIco_box">操作优势<img src="{ms:globalskin.url/}/images/plusico.png" />
+					<input type="hidden" name="catid" value="84"/>
+				</li>
+				<li class="liS4 lookIco_box">服务项目<img src="{ms:globalskin.url/}/images/plusico.png" />
+					<input type="hidden" name="catid" value="85"/>
+				</li>
+				<li class="liS5 lookIco_box">支付方式<img src="{ms:globalskin.url/}/images/plusico.png" />
+					<input type="hidden" name="catid" value="86"/>
+				</li>
+				<li class="liS6 lookIco_box">服务类别<img src="{ms:globalskin.url/}/images/plusico.png" />
+					<input type="hidden" name="catid" value="87"/>
+				</li>
+				<li class="liS7 lookIco_box">费用<img src="{ms:globalskin.url/}/images/plusico.png" />
+					<input type="hidden" name="catid" value="88"/>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+{/ms:arclist}
+<div id="ndfw37"></div>
+{ms:arclist typeid=63 size=1 order=asc}
+<div class="process w1066 tc" >
+	<div class="top"> <img  src="{ms:globalskin.url/}/images/processtxt.jpg" />
+		[field.content/]
+		<img src="{ms:global.host/}[field.litpic/]" /> </div>
+	<div class="bot">
+		<ul>
+			<li class="lSty1">
+				<div class="div01">项目组研讨活动，根据阶段划分、按时提交策划设计方案，项目经理审查项目组整体方案，项目组对方案进行研讨、修正，最终方案正式提交 。</div>
+				<a href="javascript:void(0)"></a> 了解我们) </li>
+			<li class="lSty2">
+				<div class="div01">项目咨询项目咨询项目咨询项目咨询项目咨询</div>
+				<a href="javascript:void(0)"></a> 项目咨询 </li>
+			<li class="lSty3">
+				<div class="div01">了解项目报价了解项目报价了解项目报价了解项目报价了解项目报价了解项目报价</div>
+				<a href="javascript:void(0)"></a> 了解项目报价 </li>
+			<li class="lSty4">
+				<div class="div01">项目启动项目启动项目启动项目启动</div>
+				<a href="javascript:void(0)"></a> 项目启动 </li>
+			<li class="lSty5">
+				<div class="div01">方案设计方案设计方案设计方案设计方案设计方案设计</div>
+				<a href="javascript:void(0)"></a> 方案设计 </li>
+			<li class="lSty6">
+				<div class="div01">方案论证方案论证方案论证方案论证方案论证</div>
+				<a href="javascript:void(0)"></a> 方案论证 </li>
+			<li class="lSty7">
+				<div class="div01">方案实施方案实施方案实施方案实施方案实施</div>
+				<a href="javascript:void(0)"></a> 方案实施 </li>
+			<li class="lSty8">
+				<div class="div01">项目结束项目结束项目结束项目结束项目结束项目结束</div>
+				<a href="javascript:void(0)"></a> 项目结束 </li>
+		</ul>
+	</div>
+	<p class="f14" style="color:#424242;">[field.descrip/] </p>
+</div>
+{/ms:arclist}
+<div id="ndfw38"></div>
+<div id="environment" class="tc"> <img src="{ms:globalskin.url/}/images/environmenttit.png" />
+	<div class="environ w1066 clearfix">
+		<div class="left fl">
+		  <p>将所有的设计都委托给一家值得信赖的设计机构，如果您是外地客户，合作前，
+			请您认真阅读以下几条建议。</p>
+		  <ul class="c6">
+			<li class="liStyle01">建议您一定要花点时间来了解设计机构，（在沟通之前，希望您能花至少10-20分钟的时间，通过对织梦猫(dedemao.cn)的设计案例及设计层次作一个初步的了解和评估）因为彼此的欣赏和信任才会有良好的合作。</li>
+			<li class="liStyle02">您在确认合作前可以多了解对比几家设计公司，（选择一个真正合适自身要求与定位的设计公司合作，是成功合作的基础。您可以通过对比设计公司的设计理念、设计风格、作品设计层次等几个方面来选择真正适合自己的设计公司合作。我们不想出现您盲目的选择或者抛弃。</li>
+			<li class="liStyle03">建议客户若时间充分可以安排公司项目负责人前来设计机构</li>
+		  </ul>
+		</div>
+		<div class="right fr">
+      <p>异地客户合作流程</p>
+      <ul>
+        <li class="liSt01">
+          <p>首次沟通<br>
+            <span>双方通过电话或其他在线联系方式沟通、交流，初步达成合作意向。</span></p>
+        </li>
+        <li class="liSt02">
+          <p>合作意向<br>
+            <span>明确设计内容、价格及进度排期；</span></p>
+        </li>
+        <li class="liSt03">
+          <p>确定合作<br>
+            <span>签订委托合同书，委托方支付50%预付款，明确双方负责人；</span></p>
+        </li>
+        <li class="liSt04">
+          <p>项目调研<br>
+            <span>成立项目小组，收集与消化客户企业相关资料，调研其竟争对方的市场表现；</span></p>
+        </li>
+        <li class="liSt05">
+          <p>项目设计<br>
+            <span>分析、策略定位、沟通、项目讨论、展开设计；</span></p>
+        </li>
+        <li class="liSt06">
+          <p>设计提案<br>
+            <span>与客户方负责及决策人进行沟通，客户并提出合理的调整修改方案；</span></p>
+        </li>
+        <li class="liSt07">
+          <p>方案调整<br>
+            <span>根据沟通基础对设计方案进行细化调整，最终方案客户确定满意；</span></p>
+        </li>
+        <li class="liSt08">
+          <p>交付方案<br>
+            <span>支付项目余款，提交最终电子设计文件及合同协议中规定相应的项目；</span></p>
+        </li>
+        <li class="liSt09">
+          <p>后续服务<br>
+            <span>继续与客户保持联系，及时帮助客户解决在设计执行落地问题及技术问题和相关咨询。</span></p>
+        </li>
+      </ul>
+    </div>
+	</div>
+</div>
+<div id="ndfw39"></div>
+<div id="answers" class="tc"> <img src="{ms:globalskin.url/}/images/answertit.jpg" />
+	<div class="slideBox10 w1066">
+		<p>我们品牌设计在线能提供什么种类的设计服务？<span></span></p>
+		<ul>
+			<li>我们品牌设计是省内专业画册设计公司，专注于画册设计，商标设计，标志设计，logo设计，企业标志设计，VI设计，网页设计等。</li>
+		</ul>
+		<p>你们设计画册多少钱？<span></span></p>
+		<ul>
+			<li>你们设计画册多少钱？你们设计画册多少钱？你们设计画册多少钱？你们设计画册多少钱？你们设计画册多少钱？</li>
+		</ul>
+		<p>如果我选择套餐后，请问怎么交易?<span></span></p>
+		<ul>
+			<li>如果我选择套餐后，请问怎么交易?如果我选择套餐后，请问怎么交易?</li>
+		</ul>
+		<p>为什么我需要填写客户调查表？<span></span></p>
+		<ul>
+			<li>为什么我需要填写客户调查表？为什么我需要填写客户调查表？为什么我需要填写客户调查表？</li>
+		</ul>
+		<p>我们品牌设计在线如何保证设计质量？<span></span></p>
+		<ul>
+			<li>我们品牌设计在线如何保证设计质量？我们品牌设计在线如何保证设计质量？</li>
+		</ul>
+		<p>为什么我们品牌设计在线能得到无可比拟的超值服务？<span></span></p>
+		<ul>
+			<li>为什么我们品牌设计在线能得到无可比拟的超值服务？为什么我们品牌设计在线能得到无可比拟的超值服务？</li>
+		</ul>
+		<p>是否可以选择我们的设计在线提供一站式设计服务，完成我的后续设计项目？<span></span></p>
+		<ul>
+			<li>是否可以选择我们的设计在线提供一站式设计服务，完成我的后续设计项目？是否可以选择我们的设计在线提供一站式设计服务，完成我的后续设计项目？</li>
+		</ul>
+		<p>网络服务方式有什么优势？<span></span></p>
+		<ul>
+			<li>网络服务方式有什么优势？网络服务方式有什么优势？</li>
+		</ul>
+	</div>
+</div>
+<script>
+    jQuery(".slideBox10").slide({ titCell:"p", targetCell:"ul",autoPlay:"true",trigger:"click"})
+
+</script>
+<div id="ndfw40"></div>
+<div id="needKnow">
+	<div class="w1066 clearfix"> <img src="{ms:globalskin.url/}/images/needknow.png" class="fl"/>
+		<div class="rightBox09 fl">
+			<div class="hd">
+				<ul class="clearfix" style="position:relative;">
+					<li >以单一项目为结算</li>
+					<li class="ulLi01">以月费形式结算</li>
+					<span style=" position: absolute;left: 50%;width: 12px; margin-left: -2px;display: block;border-top: 2px solid #e62129;bottom: 0px;"></span>
+				</ul>
+			</div>
+			<div class="bd">
+				<ul>
+					<li>单一项目合作方式是根据客户需求,以单一设计项目收取设计费用的合作方式,项目完成后合同即时终止。通常适用设计需求不是很大的企业.</li>
+					<li>符合以下任何一点即适合选择此服务形式：<br />
+						企业近期只需要单一的设计服务,<br />
+						设计需求不是很大的企业<br />
+						经济上不能承受长期的设计服务费用</li>
+					<li>合作流程： 根据客户需求，双方沟通确定单项设计工作以及设计费用。 与我们的设计签署单项设计合同。确定设计服务额度以后，支付设计费总额的40%费用做诚意金,余额在项目结束后一次性付清。</li>
+					<li>单一项目合作优势： 操作灵活.简便.按需下单</li>
+					<li>劣势： 合作双方,不能达成长远的合作伙伴关系,设计服务商不固定,造成设计方向的把握不能形成统一</li>
+				</ul>
+				<ul>
+					<li>以月费形式结算方式是根据客户需求,以单一设计项目收取设计费用的合作方式,项目完成后合同即时终止。通常适用设计需求不是很大的企业.</li>
+					<li>符合以下任何一点即适合选择此服务形式：<br />
+						企业近期只需要单一的设计服务,<br />
+						设计需求不是很大的企业<br />
+						经济上不能承受长期的设计服务费用</li>
+					<li>合作流程： 根据客户需求，双方沟通确定单项设计工作以及设计费用。 与我们的设计签署单项设计合同。确定设计服务额度以后，支付设计费总额的40%费用做诚意金,余额在项目结束后一次性付清。</li>
+					<li>单一项目合作优势： 操作灵活.简便.按需下单</li>
+					<li>劣势： 合作双方,不能达成长远的合作伙伴关系,设计服务商不固定,造成设计方向的把握不能形成统一</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+    jQuery(".rightBox09").slide({});
+</script>
+ {ms:include filename=footer.htm/}
+</div>
+</body>
+</html>

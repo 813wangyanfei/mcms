@@ -1,0 +1,81 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+{ms:include filename=headFile.htm/}
+</head>
+<body>
+{ms:include filename=head.htm/}
+<div id="ban001" class="carousel slide" data-ride="carousel" data-wrap="true" data-interval="3000">
+	<ol class="carousel-indicators">
+	</ol>
+	<div class="carousel-inner">
+		<div class="item active"> 
+			{ms:arclist typeid=147 size=1} 
+				<a href="http://ms.mingsoft.net/" title=""> <img src="[field.litpic/]"  class="ttX mwn h500" /> </a> 
+			{/ms:arclist} 
+		</div>
+	</div>
+</div>
+<section class="met_section met_section_asidenone met_section_sehed container">
+	<section class="met_section_head"> 
+		<a href="{ms:global.host/}" title="网站首页">网站首页</a> &gt; 
+		<a href="{ms:field.typelink/}">{ms:field.typetitle/}</a> 
+	</section>
+	<article>
+		<div class="met_article">
+			<div class="met_clear"></div>
+			<div class="col-sm-6 clearfix list-group showproductleft">
+				<div class="sp-large"> 
+					<a href="#" alt=""> <img src="{ms:field.litpic/}" alt="" style="width:264px;height:195px;"></a> 
+				</div>
+				<div class="sp-wrap list-group-item"> 
+					<a href="#" class="sp-current-big"> <img src="{ms:field.litpic/}" alt="" width="400" /> </a> 
+					<a href="#" class="sp-current-big"> <img src="{ms:field.litpic/}" alt="" width="400" /> </a> 
+				</div>
+			</div>
+			<div class="col-sm-6 clearfix list-group showproductright">
+				<h1 class="h2">{ms:field.title/}</h1>
+				<ul class="v2-list showproduct_paralist_ul list-group-item">
+					<li><span>型号</span></li>
+					<li><span>类型</span></li>
+					<li><span>其他</span></li>
+				</ul>
+				<p class="list-group-item">{ms:field.descrip/}</p>
+			</div>
+		</div>
+		<div class="met_clear"></div>
+		<div class="panel panel-default">
+			<ul id="myTab" class="nav nav-pills panel-heading" role="tablist">
+				<li class="active"><a href="#mettab1" role="tab" data-toggle="tab">详细信息</a></li>
+			</ul>
+			<div id="myTabContent" class="tab-content panel-body">
+				<div class="tab-pane fade in active met_editor" id="mettab1">
+					<div> {ms:field.content/}
+						<div id="metinfo_additional"></div>
+					</div>
+				</div>
+			</div>
+			<div class="panel-footer">
+				<div class="met_tools">
+					<div class="jiathis_style"> 
+						<span class="jiathis_txt">分享到：</span> 
+						<a class="jiathis_button_icons_1"></a>
+						 <a class="jiathis_button_icons_2"></a> 
+						 <a class="jiathis_button_icons_3"></a> 
+						 <a class="jiathis_button_icons_4"></a> 
+						 <a class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a> 
+					</div>
+					<script type="text/javascript" src="{ms:globalskin.url/}/js/jia.js" charset="utf-8"></script>
+					<ul class="met_page">
+						<li class="met_page_preinfo"><span>上一条</span><a href='{ms:field.prelink/}'>{ms:field.pretitle/}</a></li>
+						<li class="met_page_next"><span>下一条</span><a href='{ms:field.nextlink/}'>{ms:field.nexttitle/}</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</article>
+	<div class="met_clear"></div>
+</section>
+{ms:include filename=footer.htm/}
+</body>
+</html>

@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>{ms:field.typetitle/}</title>
+{ms:include filename=headFile.htm/}
+</head>
+<body>
+<div  class="section section1"> 
+	{ms:include filename=head.htm/}
+	<div id="trend">
+		<ul class="InfoUl w1066">
+		{ms:arclist ispaging=true size=5}
+			<li class="clearfix"> 
+				<a href="[field.link/]" target="_blank">
+					<img src="{ms:global.host/}[field.litpic/]" class="fl" /></a>
+				<div class="Infor06 fl">
+					<p class="tit cf">
+						<a href="[field.link/]" target="_blank" style="color: #fff">[field.title/]</a>
+					</p>
+					<p class="time">TIME:[field.date fmt=yyyy-MM-dd/]</p>
+					<p class="cont">[field.descrip/]</p>
+				</div>
+			</li>
+		{/ms:arclist}	
+		</ul>
+		<p id="pages" class="pageNum">
+			<a href="{ms:page.index/}">首</a>
+			<a href="{ms:page.pre/}">上</a>  
+			<a>{ms:page.cur/}</a>
+			<a href="{ms:page.next/}">下</a>  
+			<a href="{ms:page.last/}">末</a>  
+		 </p>
+	</div>
+	
+	<!---list end--->
+	 {ms:include filename=footer.htm/}
+</div>
+</body>
+</html>

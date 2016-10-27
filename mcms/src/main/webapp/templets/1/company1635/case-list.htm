@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>{ms:field.typetitle/}</title>
+{ms:include filename=headFile.htm/}
+</head>
+<body>
+<div  class="section section1"> 
+{ms:include filename=head.htm/}
+  <!--案例-->
+  <div class="caseBanner">
+    <div class="text cf tc">
+      <p class="p1">没有最好的设计，只有最适合的设计</p>
+      <p class="p2">这里不生产产品，但塑造产品的灵魂！</p>
+    </div>
+  </div>
+  <div class="workCl">
+    <div class="hd003">
+      <ul class="clearfix jja">
+		  
+		  {ms:channel typeid=61 class=on}
+		 	 <li><a href='[field.typelink/]' class="[field.class/]">[field.typetitle/]</a></li>
+      	  {/ms:channel}
+      </ul>
+    </div>
+    <div id="workId" class="work tc">
+      <ul class="workUl clearfix">
+	  {ms:arclist order=asc ispaging=true size=6}
+        <li> 
+			<a href="[field.link/]" target="_blank"><img src="{ms:global.host/}[field.litpic/]" />
+			  <div class="cont03 cf tc">
+				<p class="tit03">[field.title/]</p>
+				<p>[field.descrip/]</p>
+			  </div>
+			  <div class="workBg"></div>
+			 </a> 
+		 </li>
+	  {/ms:arclist} 
+      </ul>
+      <p id="pages" class="pageNum">
+		<a href="{ms:page.index/}">首</a>
+		<a href="{ms:page.pre/}">上</a>  
+		<a>{ms:page.cur/}</a>
+		<a href="{ms:page.next/}">下</a>  
+		<a href="{ms:page.last/}">末</a>  
+	  </p>
+    </div>
+  </div>
+ {ms:include filename=footer.htm/}
+ </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+/*车主智能APP样式*/
+.app-banner{
+	background: url(../images/app-banner.jpg) no-repeat center center;
+	background-size: cover;
+	min-height: 754px;
+}
+.app-banner .header-top{
+	background: transparent;
+}
+.app-banner .header-top .navbar-default{
+	background: transparent;
+	border-color: transparent!important;
+}
+.app-banner .navbar-default .navbar-nav > li > a{
+	color: #FFFFFF;
+	background: transparent;
+}
+.app-banner .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #27ae60;
+    background-color: transparent;
+}
+.app-banner .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #27ae60;
+    background-color: transparent;
+}
+
+.app-banner .app-load{
+	float: right;
+	margin-right: 50px;
+	margin-top: 350px;
+	max-height: 200px;
+	max-width: 500px;
+}
+.app-banner .app-load .load-btn{
+	float: left;
+	margin-right: 40px;
+}
+.app-banner .app-load button{
+	display: block;
+	margin-bottom: 40px;
+}
+
+
+
+@media (max-width:1199px) {
+
+
+}
+}

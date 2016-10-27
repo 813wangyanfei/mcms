@@ -1,0 +1,106 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+{ms:include filename=headFile.htm/}
+</head>
+<body>
+{ms:include filename=head.htm/}
+<div id="ban001" class="carousel slide" data-ride="carousel" data-wrap="true" data-interval="3000">
+	<ol class="carousel-indicators">
+	</ol>
+	<div class="carousel-inner">
+		<div class="item active"> 
+			{ms:arclist typeid=147 size=1} 
+				<a href="http://ms.mingsoft.net/" title=""> <img src="[field.litpic/]"  class="ttX mwn h500" /> </a> 
+			{/ms:arclist} 
+		</div>
+	</div>
+</div>
+<section class="met_section   container">
+	<aside>
+		<section class="met_aside">
+			<h2>留言中心<span class="sidebaran glyphicon glyphicon-th-list"></span></h2>
+			<div class="met_aside_list">
+				<dl class="list-none navnow">
+					<dt id='part2_' class='on'> 
+						<a href='{ms:global.url/}/19/142/index.html'  title='提交留言' class="zm"> 
+							<span>提交留言</span> 
+						</a> 
+					</dt>
+				</dl>
+				<dl class="list-none navnow">
+					<dt id='part2_25' class='on'> 
+						<a href='{ms:global.url/}/19/142/index.html'  title='查看留言' class="zm"> 
+							<span>查看留言</span> 
+						</a> 
+					</dt>
+				</dl>
+				<div class="met_clear"></div>
+			</div>
+		</section>
+	</aside>
+	<article>
+		<div class="met_article">
+			<section class="met_article_head sidebarh1ok">
+				<h1 class="clearfix">留言中心</h1>
+				<div class="met_position"> 
+					<a href="{ms:global.host/}" title="网站首页">网站首页</a> &gt; 
+					<a href="{ms:global.url/}/19/142/index.html	" >留言中心</a> 
+				</div>
+			</section>
+			<div class="met_clear"></div>
+			<div class="clearfix resmessagelist">
+				<div class='met_pager'> </div>
+				<form>
+					<input type='hidden' name='lang' value='cn' />
+					<div class="panel panel-default">
+						<div class="panel-heading"> <strong class="lead">提交留言</strong> </div>
+						<ul class="list-group">
+							<li class="list-group-item clearfix">
+								<div class="col-sm-2 control-label h5">姓名</div>
+								<div class="col-sm-5 ">
+									<input name='para30' type='text' class='form-control' placeholder='姓名' data-required=1 />
+								</div>
+							</li>
+							<li class="list-group-item clearfix">
+								<div class="col-sm-2 control-label h5">电话</div>
+								<div class="col-sm-5 ">
+									<input name='para31' type='text' class='form-control' placeholder='电话'  />
+								</div>
+							</li>
+							<li class="list-group-item clearfix">
+								<div class="col-sm-2 control-label h5">Email</div>
+								<div class="col-sm-5 ">
+									<input name='para32' type='text' class='form-control' placeholder='Email'  />
+								</div>
+							</li>
+							<li class="list-group-item clearfix">
+								<div class="col-sm-2 control-label h5">其他联系方式</div>
+								<div class="col-sm-5 ">
+									<input name='para33' type='text' class='form-control' placeholder='其他联系方式'  />
+								</div>
+							</li>
+							<li class="list-group-item clearfix">
+								<div class="col-sm-2 control-label h5">留言内容</div>
+								<div class="col-sm-5 ">
+									<textarea class='form-control' rows='3' name='para34' data-required=1 placeholder='留言内容'>
+									</textarea class='form-control' rows='3'>
+								</div>
+							</li>
+						</ul>
+						<ul class="list-group panel-footer clearfix">
+							<div class="col-sm-2"></div>
+							<div class="col-sm-5">
+								<input type="button" name="button" value="提交信息"  class="btn btn-primary" />
+							</div>
+						</ul>
+					</div>
+				</form>
+			</div>
+		</div>
+	</article>
+	<div class="met_clear"></div>
+</section>
+{ms:include filename=footer.htm/}
+</body>
+</html>

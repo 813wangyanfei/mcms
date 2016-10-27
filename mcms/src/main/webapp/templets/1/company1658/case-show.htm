@@ -1,0 +1,87 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+{ms:include filename=headFile.htm/}
+</head>
+<body>
+{ms:include filename=head.htm/}
+<div id="ban001" class="carousel slide" data-ride="carousel" data-wrap="true" data-interval="3000">
+	<ol class="carousel-indicators">
+	</ol>
+	<div class="carousel-inner">
+		<div class="item active"> 
+			{ms:arclist typeid=147 size=1} 
+				<a href="http://ms.mingsoft.net/" title=""> 
+					<img src="[field.litpic/]"  class="ttX mwn h500" /> 
+				</a> 
+			{/ms:arclist} 
+		</div>
+	</div>
+</div>
+<section class="met_section  met_section_sehed container">
+	<section class="met_section_head"> 
+		<a href="{ms:global.host/}" title="网站首页">网站首页</a> &gt; 
+		<a href="{ms:field.typelink/}" >{ms:field.typetitle/}</a> 
+	</section>
+	<aside>
+		<section class="met_aside">
+			<h2>技术专区<span class="sidebaran glyphicon glyphicon-th-list"></span></h2>
+			<div class="met_aside_list"> 
+				{ms:channel typeid=61 size=2}
+					<dl class="list-none navnow">
+						<dt id='part2_22' ><a href='[field.typelink/]'  class="zm"><span>[field.typetitle/]</span></a></dt>
+					</dl>
+				{/ms:channel}
+				<div class="met_clear"></div>
+			</div>
+		</section>
+	</aside>
+	<article>
+		<div class="met_article">
+			<div class="met_clear"></div>
+			<section class="clearfix resmet_module2">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h1 class="h2 text-center">{ms:field.title/}</h1>
+						<div class="text-muted text-center"> 
+							<span class="met_time">{ms:field.date fmt=yyyy-MM-dd hh:mm:ss/}</span> 
+							<span class="met_source"><a href="/" >{ms:field.author/}</a></span> 
+							<span class="met_hits">已读 <span class="met_Clicks"></span></span> 
+						</div>
+					</div>
+					<div class="met_editor panel-body">
+						<div> {ms:field.content/}
+							<div id="metinfo_additional"></div>
+						</div>
+						<div class="met_clear"></div>
+					</div>
+					<div class="panel-footer">
+						<div class="met_tools">
+							<div class="jiathis_style">
+								<span class="jiathis_txt">分享到：</span> 
+								<a class="jiathis_button_icons_1"></a> 
+								<a class="jiathis_button_icons_2"></a> 
+								<a class="jiathis_button_icons_3"></a> 
+								<a class="jiathis_button_icons_4"></a> 
+								<a target="_blank"></a> 
+							</div>
+							<script type="text/javascript" src="{ms:globalskin.url/}/js/jia.js" charset="utf-8"></script>
+							<ul class="met_page">
+								<li class="met_page_preinfo">
+									<span>上一条</span><a href='{ms:field.prelink/}'>{ms:field.pretitle/}</a>
+								</li>
+								<li class="met_page_next">
+									<span>下一条</span><a href='{ms:field.nextlink/}'>{ms:field.nexttitle/}</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</article>
+	<div class="met_clear"></div>
+</section>
+{ms:include filename=footer.htm/}
+</body>
+</html>

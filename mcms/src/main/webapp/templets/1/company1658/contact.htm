@@ -1,0 +1,68 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+{ms:include filename=headFile.htm/}
+</head>
+<body>
+{ms:include filename=head.htm/}
+<div id="ban001" class="carousel slide" data-ride="carousel" data-wrap="true" data-interval="3000">
+	<ol class="carousel-indicators">
+	</ol>
+	<div class="carousel-inner">
+		<div class="item active"> 
+			{ms:arclist typeid=147 size=1} 
+				<a href="#" title=""> <img src="[field.litpic/]"  class="ttX mwn h500" /> </a> 
+			{/ms:arclist} 
+		</div>
+	</div>
+</div>
+<section class="met_section   container">
+	<aside>
+		<section class="met_aside">
+			<h2>关于我们<span class="sidebaran glyphicon glyphicon-th-list"></span></h2>
+			<div class="met_aside_list"> 
+				<!-- {ms:channel typeid=93}
+        <dl class="list-none navnow">
+          <dt id='part2_9' ><a href='[field.typelink/]'  title='' class="zm"><span>[field.typetitle/]</span></a></dt>
+        </dl>
+     {/ms:channel} --> 
+			</div>
+		</section>
+	</aside>
+	<article>
+		<div class="met_article">
+			<section class="met_article_head sidebarh1ok">
+				<h1 class="clearfix">联系我们</h1>
+				<div class="met_position"> 
+					<a href="{ms:global.host/}" title="网站首页">网站首页</a> &gt; 
+					<a href="{ms:global.url/}/93/index.html" >关于我们</a> > 
+					<a href="{ms:global.url/}/19/141/index.html">联系我们</a> 
+				</div>
+			</section>
+			<div class="met_clear"></div>
+			<div class="met_editor met_module1">
+				<div> 
+					{ms:arclist typeid=141}
+						<p>&nbsp; </p>
+						<table>
+							<tbody>
+								<tr>
+									<td style="text-align: center; width: 500px">
+										<iframe src="http://cdn.mingsoft.net/global/map.htm?wmode=transparent&amp;wmode=transparent" id="ifrm" name="ifrm" width="454" height="320" frameborder="0" scrolling="no" onload="document.all('ifrm').style.height=ifrm.document.body.scrollHeight+30;"></iframe>
+									</td>
+									<td> {ms:field.content/} </td>
+								</tr>
+							</tbody>
+						</table>
+						<p>&nbsp; </p>
+					{/ms:arclist} 
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</article>
+	<div class="met_clear"></div>
+</section>
+{ms:include filename=footer.htm/}
+</body>
+</html>
